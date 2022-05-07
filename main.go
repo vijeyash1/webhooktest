@@ -4,7 +4,7 @@ import "fmt"
 
 func main() {
 	fmt.Println("hi")
-	fmt.Println("hi")
+	
 	{
 		"ref": "refs/heads/main",
 		"before": "c32e6b4a3b9fcab0956825c8f488daff4d0a3ecf",
