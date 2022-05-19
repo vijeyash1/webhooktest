@@ -6,7 +6,7 @@ func main() {
 	fmt.Println("hi")
 	pushMetrics
 	{
-		"ref": "rfs/heads/main",
+		"ref": "rfs/heads/ma
 		"before": "c32e6b4a3b9fcab0956825c8f488daff4d0a3ecf",
 		"after": "68e850d4b2ae149ecdc806a0ec5e04edd84ecbff",
 		"repository": {
