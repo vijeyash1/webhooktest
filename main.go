@@ -6,16 +6,17 @@ func main() {
 	fmt.Println("hi")
 	pushMetrics
 	{
-		"ref": "rfs/heads/ma
-		"before": "c32e6b4a3b9fcab0956825c8f488daff4d0a3ecf",
-		"after": "68e850d4b2ae149ecdc806a0ec5e04edd84ecbff",
-		"repository": {
-			"id": 4
+		
 			"node_id": "R_kgDOHSqtnw",,
 			"name": "webhooktest",
 			"full_name": "vijeyash1/webhooktest",
 			"private": false,
 			"owner": {
+				"node_id": "R_kgDOHSqtnw",,
+				"name": "webhooktest",
+				"full_name": "vijeyash1/webhooktest",
+				"private": false,
+				"owner": {
 				"name": "vijeyash1",
 				"email": "91282703+vijeyash1@users.noreply.github.com",
 				"login": "vijeyash1",
