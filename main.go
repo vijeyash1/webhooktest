@@ -4,6 +4,7 @@ import (
 	"fmt"
 	"time"
 
+	"github.com/go-git/go-git/plumbing"
 	"github.com/go-git/go-git/v5"
 	. "github.com/go-git/go-git/v5/_examples"
 	"github.com/go-git/go-git/v5/plumbing/object"
@@ -28,6 +29,10 @@ func main() {
 	CheckIfError(err)
 	var d *plumbing.Reference
 	err = b.ForEach(func(d *plumbing.Reference) error {
+		fmt.Printf("add: %d\tdel: %d\tfile: %s\n", stat.Addition, stat.Deletion, stat.Name)
+		fmt.Printf("add: %d\tdel: %d\tfile: %s\n", stat.Addition, stat.Deletion, stat.Name)
+		fmt.Printf("add: %d\tdel: %d\tfile: %s\n", stat.Addition, stat.Deletion, stat.Name)
+
 		fmt.Println(d)
 		return nil
 	})
