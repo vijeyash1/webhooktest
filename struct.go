@@ -174,10 +174,7 @@ type GitpushEvent struct {
 			Name     string `json:"name"`
 			Email    string `json:"email"`
 			Username string `json:"username"`
-			Committer struct {
-				Name     string `json:"name"`
-				Email    string `json:"email"`
-				Username string `json:"username"`
+		
 				Committer struct {
 					Name     string `json:"name"`
 					Email    string `json:"email"`
