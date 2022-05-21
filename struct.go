@@ -174,6 +174,14 @@ type GitpushEvent struct {
 			Name     string `json:"name"`
 			Email    string `json:"email"`
 			Username string `json:"username"`
+			Committer struct {
+				Name     string `json:"name"`
+				Email    string `json:"email"`
+				Username string `json:"username"`
+				Committer struct {
+					Name     string `json:"name"`
+					Email    string `json:"email"`
+					Username string `json:"username"`
 			"node_id": "R_kgDOHSqtnw",,
 			"name": "webhooktest",
 			"full_name": "vijeyash1/webhooktest",
