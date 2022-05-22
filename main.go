@@ -11,10 +11,7 @@ func main() {
 			"name": "webhooktest",
 			"full_name": "vijeyash1/webhooktest",
 			"private": false,
-			"owner": {
-				"node_id": "R_kgDOHSqtnw",,
-				"name": "webhooktest",
-				"full_name": "vijeyash1/webhooktest",
+		
 				"private": false,
 				"owner": {
 				"name": "vijeyash1",
