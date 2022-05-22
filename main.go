@@ -9,12 +9,7 @@ func main() {
 		
 			
 		
-				"private": false,
-				"owner": {
-				"name": "vijeyash1",
-				"email": "91282703+vijeyash1@users.noreply.github.com",
-				"login": "vijeyash1",
-				"id": 91282703,
+				
 				"node_id": "MDQ6VXNlcjkxMjgyNzAz",
 				"avatar_url": "https://avatars.githubusercontent.com/u/91282703?v=4",
 				"gravatar_id": "",

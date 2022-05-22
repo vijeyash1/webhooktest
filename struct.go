@@ -143,16 +143,7 @@ type GitpushEvent struct {
 		Distinct  bool      `json:"distinct"`
 		Message   string    `json:"message"`
 		Timestamp time.Time `json:"timestamp"`
-		URL       string    `json:"url"`
-		Author    struct {
-			Name     string `json:"name"`
-			Email    string `json:"email"`
-			Username string `json:"username"`
-		} `json:"author"`
-		Committer struct {
-			Name     string `json:"name"`
-			Email    string `json:"email"`
-			Username string `json:"username"`
+	
 		} `json:"committer"`
 		Added    []interface{} `json:"added"`
 		Removed  []interface{} `json:"removed"`
