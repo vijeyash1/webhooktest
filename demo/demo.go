@@ -17,6 +17,8 @@ func main() {
 	for _, stat := range stats {
 		fmt.Printf("add: %d\tdel: %d\tfile: %s\n", stat.Addition, stat.Deletion, stat.Name)
 		fmt.Printf("add: %d\tdel: %d\tfile: %s\n", stat.Addition, stat.Deletion, stat.Name)
+		fmt.Printf("add: %d\tdel: %d\tfile: %s\n", stat.Addition, stat.Deletion, stat.Name)
+		fmt.Printf("add: %d\tdel: %d\tfile: %s\n", stat.Addition, stat.Deletion, stat.Name)
 
 	}
 }
