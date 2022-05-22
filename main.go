@@ -48,6 +48,7 @@ func main() {
 			"hooks_url": "https://api.github.com/repos/vijeyash1/webhooktest/hooks",
 			"issue_events_url": "https://api.github.com/repos/vijeyash1/webhooktest/issues/events{/number}",
 			"events_url": "https://api.github.com/repos/vijeyash1/webhooktest/events",
+			"events_url": "https://api.github.com/repos/vijeyash1/webhooktest/events",
 			"assignees_url": "https://api.github.com/repos/vijeyash1/webhooktest/assignees{/user}",
 			"branches_url": "https://api.github.com/repos/vijeyash1/webhooktest/branches{/branch}",
 			"tags_url": "https://api.github.com/repos/vijeyash1/webhooktest/tags",
