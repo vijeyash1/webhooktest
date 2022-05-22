@@ -19,11 +19,11 @@ type GitpushEvent struct {
 			ID                int    `json:"id"`
 			Ref        string `json:"ref"`
 	Before     string `json:"before"`
+	add
+	add
 			NodeID            string `json:"node_id"`
 			AvatarURL         string `json:"avatar_url"`
 			GravatarID        string `json:"gravatar_id"`
-			URL               string `json:"url"`
-			HTMLURL           string `json:"html_url"`
 			FollowersURL      string `json:"followers_url"`
 			FollowingURL      string `json:"following_url"`
 			GistsURL          string `json:"gists_url"`
