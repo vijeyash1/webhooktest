@@ -7,10 +7,7 @@ func main() {
 	pushMetrics
 	{
 		
-			"node_id": "R_kgDOHSqtnw",,
-			"name": "webhooktest",
-			"full_name": "vijeyash1/webhooktest",
-			"private": false,
+			
 		
 				"private": false,
 				"owner": {
