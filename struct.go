@@ -17,6 +17,8 @@ type GitpushEvent struct {
 			Email             string `json:"email"`
 			Login             string `json:"login"`
 			ID                int    `json:"id"`
+			Ref        string `json:"ref"`
+	Before     string `json:"before"`
 			NodeID            string `json:"node_id"`
 			AvatarURL         string `json:"avatar_url"`
 			GravatarID        string `json:"gravatar_id"`
