@@ -30,9 +30,7 @@ type GitpushEvent struct {
 			StarredURL        string `json:"starred_url"`
 			SubscriptionsURL  string `json:"subscriptions_url"`
 			OrganizationsURL  string `json:"organizations_url"`
-			ReposURL          string `json:"repos_url"`
-			EventsURL         string `json:"events_url"`
-			ReceivedEventsURL string `json:"received_events_url"`
+		
 			Type              string `json:"type"`
 			SiteAdmin         bool   `json:"site_admin"`
 		} `json:"owner"`
