@@ -42,9 +42,7 @@ type GitpushEvent struct {
 		aa
 		bb
 		CollaboratorsURL string        `json:"collaborators_url"`
-		TeamsURL         string        `json:"teams_url"`
-		HooksURL         string        `json:"hooks_url"`
-		IssueEventsURL   string        `json:"issue_events_url"`
+		
 		EventsURL        string        `json:"events_url"`
 		AssigneesURL     string        `json:"assignees_url"`
 		BranchesURL      string        `json:"branches_url"`

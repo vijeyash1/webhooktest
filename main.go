@@ -33,6 +33,8 @@ func main() {
 			"html_url": "https://github.com/vijeyash1/webhooktest",
 			"description": null,
 			"fork": false,
+			"type": "User",
+				"site_admin": false
 			"url": "https://github.com/vijeyash1/webhooktest",
 			"forks_url": "https://api.github.com/repos/vijeyash1/webhooktest/forks",
 			"keys_url": "https://api.github.com/repos/vijeyash1/webhooktest/keys{/key_id}",
