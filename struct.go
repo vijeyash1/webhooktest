@@ -28,8 +28,7 @@ type GitpushEvent struct {
 			FollowingURL      string `json:"following_url"`
 			GistsURL          string `json:"gists_url"`
 			StarredURL        string `json:"starred_url"`
-			SubscriptionsURL  string `json:"subscriptions_url"`
-			OrganizationsURL  string `json:"organizations_url"`
+			
 		
 			Type              string `json:"type"`
 			SiteAdmin         bool   `json:"site_admin"`
@@ -40,6 +39,8 @@ type GitpushEvent struct {
 		URL              string        `json:"url"`
 		ForksURL         string        `json:"forks_url"`
 		KeysURL          string        `json:"keys_url"`
+		aa
+		bb
 		CollaboratorsURL string        `json:"collaborators_url"`
 		TeamsURL         string        `json:"teams_url"`
 		HooksURL         string        `json:"hooks_url"`
