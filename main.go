@@ -13,10 +13,10 @@ const (
 )
 
 func main() {
-	hook, _ := github.New(github.Options.Secret("MyGitHubSuperSecretSecrect...?"))
+	hook, _ := github.New()
 
 	http.HandleFunc(path, func(w http.ResponseWriter, r *http.Request) {
-		payload, err := hook.Parse(r, github.ReleaseEvent, github.PullRequestEvent)
+		payload, err := hook.Parse(r, github.PushEvent)
 		if err != nil {
 			if err == github.ErrEventNotFound {
 				// ok event wasn;t one of the ones asked to be parsed
@@ -24,15 +24,11 @@ func main() {
 		}
 		switch payload.(type) {
 
-		case github.ReleasePayload:
-			release := payload.(github.ReleasePayload)
+		case github.PushPayload:
+			release := payload.(github.PushPayload)
 			// Do whatever you want from here...
 			fmt.Printf("%+v", release)
 
-		case github.PullRequestPayload:
-			pullRequest := payload.(github.PullRequestPayload)
-			// Do whatever you want from here...
-			fmt.Printf("%+v", pullRequest)
 		}
 	})
 	http.ListenAndServe(":8000", nil)
