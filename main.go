@@ -13,9 +13,9 @@ const (
 )
 
 func main() {
-	hook, _ := github.New()
 
 	http.HandleFunc(path, func(w http.ResponseWriter, r *http.Request) {
+		hook, _ := github.New()
 		payload, err := hook.Parse(r, github.PushEvent)
 		if err != nil {
 			if err == github.ErrEventNotFound {
