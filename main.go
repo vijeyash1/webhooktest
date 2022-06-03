@@ -22,7 +22,7 @@ func main() {
 				// ok event wasn;t one of the ones asked to be parsed
 			}
 		}
-		switch payload.(type) {
+		switch value = payload.(type) {
 
 		case github.PushPayload:
 			release := payload.(github.PushPayload)
