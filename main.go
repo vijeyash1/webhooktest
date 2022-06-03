@@ -25,7 +25,7 @@ func main() {
 		switch value = payload.(type) {
 
 		case github.PushPayload:
-			release := payload.(github.PushPayload)
+			release := value
 			// Do whatever you want from here...
 			fmt.Printf("%+v", release)
 
