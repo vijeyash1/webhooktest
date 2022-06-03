@@ -28,6 +28,10 @@ func main() {
 			release := value
 			// Do whatever you want from here...
 			fmt.Printf("%+v", release)
+			fmt.Printf("%+v", release)
+
+			fmt.Printf("%+v", release)
+
 
 		}
 	})
