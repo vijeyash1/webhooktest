@@ -94,6 +94,13 @@ db.Set("gorm:table_options", "ENGINE=File(cluster, default, hits)").AutoMigrate(
     if err != nil {
     	log.Fatal("Error loading .env file")
     }
+    func init() {
+    err := godotenv.Load()
+    if err != nil {
+    	log.Fatal("Error loading .env file")
+    }
+
+}
 
 }
 log.Fatal("Error loading .env file")
