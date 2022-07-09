@@ -15,7 +15,7 @@ DB_ADDRESS="127.0.0.1"
 export DB_ADDRESS="127.0.0.1" && export DB_PORT="9000" && export NATS_TOKEN="UfmrJOYwYCCsgQvxvcfJ3var (
 docker run -d -p 4222:4222 nats:latest -js
 token string
-export DB_ADDRESS="127.0.0.1" && export DB_PORT="9000" && export NATS_TOKEN="UfmrJOYwYCCsgQvxvcfJ3BdI6c8WBbnD" && export NATS_ADDRESS="nats://localhost:4222"export DB_ADDRESS="127.0.0.1" && export DB_PORT="9000" && export NATS_TOKEN="UfmrJOYwYCCsgQvxvcfJ3BdI6c8WBbnD" && export NATS_ADDRESS="nats://localhost:4222"
+export DB_ADDRESS="127.0.0.1" && export DB_PORT="9000" && export NATS_TOKEN="UfmrJOYwYCCsgQvxvcfJ3BdI6c8WBbnD" && export NATS_ADDRESS="nats://localhost:4222"export DB_ADDRESS="127.0.0.1" && export DB_PORT="9000" && export NATS_TOKEN="UfmrJOYwYCCsgQvxvcfJ3BdI6c8Wos.Getenv("NATS_ADDRESS")BbnD" && export NATS_ADDRESS="nats://localhost:4222"
 natsurl stringBdI6c8WBbnD" && export NATS_ADDRESS="nats://localhost:4222"
 DB_PORT="9000"
 this a a github test payload
