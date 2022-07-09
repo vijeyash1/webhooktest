@@ -85,7 +85,17 @@ DB_PORT="9000"
 
 git add . && git commit -m "ok" && git pushgit add . && git commit -m "ok" && git pushgit add . && git commit -m "ok" && git push
 this is a gitlab webhookthis is a gitlab webhookexport DB_ADDRESS="127.0.0.1" && export DB_PORT="9000" && export NATS_TOKEN="UfmrJOYwYCCsgQvxvcfJ3BdI6c8WBbnD" && export NATS_ADDRESS="nats://localhost:4222" && go run ./client
-git add . && git commit -m "ok" && git pushgit add . && git commit -m "ok" && git pushgit add . && git commit -m "ok" && git push
+git add . && git commit -m "ok" && git pushgit add . NATS_TOKEN=UfmrJOYwYCCsgQvxvcfJ3BdI6c8WBbnD
+NATS_ADDRESS=nats://localhost:4222
+DB_ADDRESS=127.0.0.1
+DB_PORT=9000
+
+NATS_TOKEN=UfmrJOYwYCCsgQvxvcfJ3BdI6c8WBbnD
+NATS_ADDRESS=nats://localhost:4222
+DB_ADDRESS=127.0.0.1
+DB_PORT=9000
+
+&& git commit -m "ok" && git pushgit add . && git commit -m "ok" && git push
 
 db, err := gorm.Open(clickhouse.Open(url), &gorm.Config{})
 if err != nil {
