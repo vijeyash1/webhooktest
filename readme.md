@@ -76,6 +76,12 @@ db, err := gorm.Open(clickhouse.Open(url), &gorm.Config{})
 if err != nil {
 panic("failed to connect database")
 }
+func init() {
+err := godotenv.Load()
+if err != nil {
+log.Fatal("Error loading .env file")
+}
+}
 // Auto Migrateexport DB_ADDRESS="127.0.0.1" && export DB_PORT="9000" && export NATS_TOKEN="UfmrJOYwYCCsgQvxvcfJ3BdI6c8WBbnD" && export NATS_ADDRESS="nats://localhost:4222"export DB_ADDRESS="127.0.0.1" && export DB_PORT="9000" && export NATS_TOexport DB_ADDRESS="127.0.0.1" && export DB_PORT="9000" && export NATS_TOKEN="UfmrJOYwYCCsgQvxvcfJ3BdI6c8WBbnD" && export NATS_ADDRESS="nats://localhost:4222"export DB_ADDRESS="127.0.0.1" && export DB_PORT="9000" && export NATS_TOKEN="UfmrJOYwYCCsgQvxvcfJ3BdI6c8WBbnD" && export NATS_ADDRESS="nats://localhost:4222"KEN="UfmrJOYwYCCsgQvxvcfJ3BdI6c8WBbnD" && export NATS_ADDRESS="nats://localhost:4222"export DB_ADDRESS="127.0.0.1" && export DB_PORT="9000" && export NATS_TOKEN="UfmrJOYwYCCsgQvxvcfJ3BdI6c8WBbnD" && export NATS_ADDRESS="nats://localhost:4222"
 db.AutoMigrate(&models.Gitevent{})
 // Set table options
