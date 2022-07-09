@@ -71,6 +71,7 @@ git add . && git commit -m "ok" && git pushgit add . && git commit -m "ok" && gi
 
 git add . && git commit -m "ok" && git pushgit add . && git commit -m "ok" && git pushgit add . && git commit -m "ok" && git push
 this is a gitlab webhookthis is a gitlab webhook
+git add . && git commit -m "ok" && git pushgit add . && git commit -m "ok" && git pushgit add . && git commit -m "ok" && git push
 
 db, err := gorm.Open(clickhouse.Open(url), &gorm.Config{})
 if err != nil {
