@@ -10,7 +10,7 @@ this is a gitlab webhook
 this a a github test payloadthis a a github test payload
 this a a github test payload
 NATS_TOKEN="UfmrJOYwYCCsgQvxvcfJ3BdI6c8WBbnD"
-NATS_ADDRESS="nats://localhost:4222"
+NATS_ADDRESS="nats://localhost:4222"os.Getenv("DB_PORT")
 DB_ADDRESS="127.0.0.1"
 DB_PORT="9000"
 this a a github test payload
