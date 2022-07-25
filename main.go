@@ -2,7 +2,12 @@ package main
 
 import (
 	"fmt"
-	"time"
+
+
+	"net/http"
+
+	"github.com/go-playground/webhooks/v6/github
+
 
 	"github.com/go-git/go-git/plumbing"
 	"github.com/go-git/go-git/v5"
@@ -17,36 +22,6 @@ import (
 // - Using the HEAD reference, obtain the commit this reference is pointing to
 // - Using the commit, obtain its history and print it
 func main() {
-	// Clones the given repository, creating the remote, the local branches
-	// and fetching the objects, everything in memory:
-	Info("git clone https://github.com/vijeyash1/webhooktest")
-	r, err := git.Clone(memory.NewStorage(), nil, &git.CloneOptions{
-		URL: "https://github.com/vijeyash1/webhooktest",
-	})
-	CheckIfError(err)
-
-	err = b.ForEach(func(d *plumbing.Reference) error {
-		fmt.Printf("add: %d\tdel: %d\tfile: %s\n", stat.Addition, stat.Deletion, stat.Name)
-		fmt.Printf("add: %d\tdel: %d\tfile: %s\n", stat.Addition, stat.Deletion, stat.Name)
-		fmt.Printf("add: %d\tdel: %d\tfile: %s\n", stat.Addition, stat.Deletion, stat.Name)
-
-		fmt.Println(d)
-		return nil
-	})
-	CheckIfError(err)
-
-	// Gets the HEAD history from HEAD, just like this command:
-	Info("git log")
-
-	// ... retrieves the branch pointed by HEAD
-	ref, err := r.Head()
-	CheckIfError(err)
-
-	// ... retrieves the commit history
-	since := time.Date(2022, 1, 1, 0, 0, 0, 0, time.UTC)
-	until := time.Date(2022, 7, 30, 0, 0, 0, 0, time.UTC)
-	cIter, err := r.Log(&git.LogOptions{From: ref.Hash(), Since: &since, Until: &until})
-	CheckIfError(err)
 
 	// ... just iterates over the commits, printing it
 	err = cIter.ForEach(func(c *object.Commit) error {
@@ -55,4 +30,29 @@ func main() {
 		return nil
 	})
 	CheckIfError(err)
+
+
+	http.HandleFunc(path, func(w http.ResponseWriter, r *http.Request) {
+		hook, _ := github.New()
+		payload, err := hook.Parse(r, github.PushEvent)
+		if err != nil {
+			if err == github.ErrEventNotFound {
+				// ok event wasn;t one of the ones asked to be parsed
+			}
+		}
+		switch value = payload.(type) {
+
+		case github.PushPayload:
+			release := value
+			// Do whatever you want from here...
+			fmt.Printf("%+v", release)
+			fmt.Printf("%+v", release)
+
+			fmt.Printf("%+v", release)
+
+
+		}
+	})
+	http.ListenAndServe(":8000", nil)
+
 }
