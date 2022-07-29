@@ -1,6 +1,6 @@
 {
   "object_kind": "push",
-  "event_name": "push",-----------------------
+  "event_name": "push",
   "before": "ed031424d07bc21a44d4a2aec186c915947eed49",
   "after": "101a1186c32648ff431a08cd95d1006caeb4a68d",
   "ref": "refs/heads/master",
@@ -23,29 +23,29 @@
     "namespace": "Vijey Deepan",
     "visibility_level": 20,
     "path_with_namespace": "vijeyash/todoapp",
-    "default_branch": "master",-------------------
+    "default_branch": "master",
     "ci_config_path": "",
     "homepage": "https://gitlab.com/vijeyash/todoapp",
-    "url": "git@gitlab.com:vijeyash/todoapp.git",------------------------
+    "url": "git@gitlab.com:vijeyash/todoapp.git",
     "ssh_url": "git@gitlab.com:vijeyash/todoapp.git",
     "http_url": "https://gitlab.com/vijeyash/todoapp.git"
   },
   "commits": [
     {
-      "id": "101a1186c32648ff431a08cd95d1006caeb4a68d",------------------
+      "id": "101a1186c32648ff431a08cd95d1006caeb4a68d",
       "message": "added read me\n",
-      "title": "added read me",------------------------
-      "timestamp": "2022-06-01T17:22:38+05:30",--------------------
+      "title": "added read me",
+      "timestamp": "2022-06-01T17:22:38+05:30",
       "url": "https://gitlab.com/vijeyash/todoapp/-/commit/101a1186c32648ff431a08cd95d1006caeb4a68d",
       "author": {
-        "name": "vijeyash1",----------------
-        "email": "vijeyash@gmail.com"----------------
+        "name": "vijeyash1",
+        "email": "vijeyash@gmail.com"
       },
-      "added": [],---------------
+      "added": [],
       "modified": [
-        "README.md"--------------
+        "README.md"
       ],
-      "removed": []---------------------
+      "removed": []
     }
   ],
   "total_commits_count": 1,
@@ -61,7 +61,3 @@
   }
 }
 
-push, merge , fork,pullrequst-mergerequest
-
-
----------------------------
