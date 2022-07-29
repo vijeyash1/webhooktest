@@ -16,3 +16,8 @@ app.publish.JS.Samplegithubpublish(&release)
 https://ebf1-122-178-160-70.in.ngrok.io
 
 https://189f-122-178-160-70.in.ngrok.io
+
+git add . && git commit -m "update" && git push
+
+[]: # Language: markdown
+[]: # Path: readme.md
