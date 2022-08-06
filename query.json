@@ -1,0 +1,1 @@
+select if(notEmpty(event.commits.added[length(event.commits.added)]),event.commits.added[length(event.commits.added)] as added , event.commits.added[length(event.commits.added)] ) from test.git_json SETTINGS describe_extend_object_types=1;
